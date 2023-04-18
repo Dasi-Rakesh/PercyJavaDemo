@@ -32,6 +32,16 @@ npm install --save-dev @percy/cli
 ## Step 2 : Execute the Test with below command : 
 npx percy exec -- mvn test  
 
+## To Compare 2 URLS to each Other
+Set PERCY_BRANCH to Production
+PERCY_BRANCH=production npx percy exec -- mvn test
+
+## Compare to the Baseline
+Change the URL in TestWebsite.java file
+
+PERCY_BRANCH=staging PERCY_TARGET_BRANCH=production npx percy exec -- mvn test
+
+Verify the Build in Percy
 
 
 

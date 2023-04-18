@@ -1,16 +1,17 @@
 package org.percy;
 
-import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.percy.selenium.Percy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.Test;
 
 public class TestWebsite {
     private static WebDriver driver;
     private static Percy percy;
+
 
     @Test
     public void exampleTest() {
@@ -19,7 +20,7 @@ public class TestWebsite {
         driver = new ChromeDriver();
         percy = new Percy(driver);
 
-        driver.get("https://www.browserstack.com/");
+        driver.get("https://k8s.bsstag.com/");
         String title = driver.getTitle();
         Assert.assertEquals(title, "Most Reliable App & Cross Browser Testing Platform | BrowserStack", "Title doesn't match");
         percy.snapshot("BrowserStack Home Page");
