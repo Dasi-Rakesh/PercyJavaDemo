@@ -30,7 +30,14 @@ $ $Env:PERCY_TOKEN="<your token here>"
 npm install --save-dev @percy/cli
 
 ## Step 2 : Execute the Test with below command : 
-npx percy exec -- mvn test  
+We can pass the URL in runtime with the below command
+
+npx percy exec -- mvn test -Durl=https://www.browserstack.com/
+
+To execute the Test in Non-Prod Environment use the below command:
+
+npx percy exec -- mvn test -Durl=https://k8s.bsstag.com/
+
 
 ## To Compare 2 URLS to each Other
 Set PERCY_BRANCH to Production
