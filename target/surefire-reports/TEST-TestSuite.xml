@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="4.023" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="4.643" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="20+36-2344"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/rakesh/PercyJava/PercyDemo"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/rakesh/PercyJavaDemoGit/PercyJavaDemo"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -13,7 +13,7 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/rakesh/PercyJava/PercyDemo"/>
+    <property name="user.dir" value="/Users/rakesh/PercyJavaDemoGit/PercyJavaDemo"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="20+36-2344"/>
     <property name="os.arch" value="aarch64"/>
@@ -57,5 +57,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.endian" value="little"/>
   </properties>
-  <testcase name="exampleTest" classname="org.example.Example" time="4.023"/>
+  <testcase name="exampleTest" classname="org.percy.TestWebsite" time="4.643"/>
 </testsuite>

@@ -3,7 +3,14 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="org.example.Example"/>
+      <class name="org.percy.TestWebsite">
+      <methods>
+        <include name="verifyHomePage"/>
+        <include name="verifyPricingPage"/>
+        <include name="verifyIntegrationPage"/>
+        <include name="verifyDocsPage"/>
+      </methods>
+     </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

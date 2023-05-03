@@ -17,6 +17,7 @@
         <jre.level>1.8</jre.level>
         <jdk.level>1.8</jdk.level>
         <surefire.plugin.version>3.0.0-M5</surefire.plugin.version>
+        <url>urlValue</url>
     </properties>
 
     <dependencies>
@@ -50,6 +51,13 @@
         </dependency>
     </dependencies>
     <build>
+        <testResources>
+            <testResource>
+                <directory>src/test/resources</directory>
+                <filtering>true</filtering>
+            </testResource>
+
+        </testResources>
         <plugins>
             <!-- Compiler plug-in -->
             <plugin>
@@ -74,6 +82,4 @@
             </plugin>
         </plugins>
     </build>
-
-
 </project>
